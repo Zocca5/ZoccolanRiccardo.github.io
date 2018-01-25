@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title> New Page </title>	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>	
+		<link rel="stylesheet" href="style/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">	
+	</head>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/web.js" defer></script>
+  <script type="text/javascript" src="../js/bitcoin.js" defer></script>
+	<script src="../custom.js"></script>
+
+	<body style="background-color: #DAFDDA">
+		<h1><p align="center">Explorateur Bitcoin</h1>
+
+		 <!-- Fixed navbar -->
+
+		<nav class="navbar navbar-default">
+			<div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" >Menù</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html" title=" Index ">Index</a></li>
+            <li><a href="index.html" title=" Bitcoin ">Bitcoin</a></li>
+            <li><a href="../Eciao.html" title=" Token ">Eciao</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+          <div class=container align="center">
+            <div class="jumbotron" align="center">
+            <article class="box page-content" id="explbit">
+                    <div class="infos" align="center">
+                      
+                      
+                      
+                      <section >
+                      
+                        <p allign="center"><input type="text" class="fff" id="input-block" value="Number of Block" onclick="javascript:this.value=''"/>
+                        <a href="#resultat" class="button" id="btn-block">Block</a>
+
+                      </section>  
+
+                      
+                      <section>
+                        <p allign="center"><input type="text" class="fff" id="input-trx" value="Hash" onclick="javascript:this.value=''" />
+                        <a href="#resultat" class="button" id="btn-trx">Transaction</a>
+                      </section>  
+                      
+                      <section> 
+                        <p allign="center"><input type="text" class="fff" id="input-add" value="Adresse Bitcoin" onclick="javascript:this.value=''" />
+                        <a href="#resultat" class="button" id="btn-add">Adresse</a>
+                      </section>
+                    </div>
+
+                      <section>
+                      
+                        
+                        <div id="resultat">
+                
+                        </div>
+                      
+                      </section>
+            </article>
+          </div>
+        </div>
+
+      <div class="container">
+        <div class="jumbotron">
+              <h3>
+                <img src="../style/img/bitcoin.png" alt="bitcoin" width="150" height="150"/>
+                The Bitcoin blockchain counts <span id="number_blocks"></span> blocks
+              </h3>
+          </div>
+      </div>
+    </body>
+</html>
